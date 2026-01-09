@@ -57,11 +57,10 @@ insert into bookings(user_id, vehicle_id, start_date, end_date, status, total_co
 (1, 1, '2023-12-10', '2023-12-12', 'pending', 100);
 
 
--- SQL Queries Result :codejoin close
+-- SQL Queries Result :
 
 -- Query 1: JOIN
 -- Requirement: Retrieve booking information along with Customer name and Vehicle name.
-
 select 
   b.booking_id,
   u.name as customer_name,
@@ -75,7 +74,6 @@ select
 
 -- Query 2: EXISTS (not exists)
 -- Requirement: Find all vehicles that have never been booked.
-
 select * from 
   vehicles 
   where not exists (
@@ -93,7 +91,6 @@ and status = 'available';
 
 -- Query 4: GROUP BY and HAVING
 -- Find the total number of bookings for each vehicle and display only those vehicles that have more than 2 bookings.
-
 select 
   v.name as vehicle_name,
   count(b.booking_id) as total_bookings
