@@ -32,7 +32,7 @@ The complete ERD is available at the link below:
 
 SQL queries are written based on the designed schema and stored in the following file:
 
-* `queries.sql`
+- [queries.sql](queries.sql)
 
 ### Implemented Queries
 
